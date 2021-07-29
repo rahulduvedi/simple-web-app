@@ -113,7 +113,7 @@ def algo_3():
             min_price = min(min_price, prices[i])
             cost = prices[i] - min_price
             maxcost = max(maxcost, cost)
-            return render_template("output.html" , output = maxcost)
+        return render_template("output.html" , output = maxcost)
     return render_template("algo_3.html")
 
 #Majority element in a arary
