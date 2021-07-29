@@ -1,0 +1,26 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="algoWrapper">
+    <div class="algoWrapper__card">
+        <h1>Maximum profit from buying and selling stocks</h1>
+        <h2>About this problem</h2>
+        <p>
+            The cost of a stock on each day is given in an array, find the max profit that
+            you can make by buying and selling in those days
+        </p>
+
+        <form href="#" method="post">
+            <p>PLEASE FILL THE REQUIRED FIELDS</p>
+
+            <div class="formGroup">
+                <input type="text" name="array" placeholder="Enter the array" required />
+                <input type="submit" value="Submit" class="button button--primary" />
+            </div>
+        </form>
+        <a class="learnMoreLink" href="https://www.geeksforgeeks.org/stock-buy-sell/">
+            Learn more about this problem
+        </a>
+    </div>
+</div>
+
+{% endblock content %}

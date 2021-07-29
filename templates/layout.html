@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../static/styles.css" />
+
+        {% if title %}
+        <title>Algo questions {{ title }}</title>
+        {% else %}
+        <title>Rahul Project</title>
+        {% endif %}
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1 class="navbar__title">Array Problems</h1>
+            <p>by <a href="https://www.linkedin.com/in/rahulduvedi/">Rahul Duvedi</a></p>
+        </nav>
+
+        {% block content %} {% endblock content %}
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const buttonElement = document.getElementById('showProblemsButtonID')
+                buttonElement.addEventListener('click', function () {
+                    const mainElement = document.getElementById('mainWrapperID')
+
+                    if (mainElement.classList.contains('show')) {
+                        mainWrapperID.classList.remove('show')
+                    } else {
+                        mainWrapperID.classList.add('show')
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>

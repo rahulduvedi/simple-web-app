@@ -1,0 +1,27 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="algoWrapper">
+    <div class="algoWrapper__card">
+        <h1>Subarray with a maximum sum</h1>
+        <h2>About this problem</h2>
+        <p>
+            Write an efficient program to find the sum of contiguous subarray within a
+            one-dimensional array of numbers that has the largest sum.
+        </p>
+
+        <form action="#" method="post">
+            <p>PLEASE FILL THE REQUIRED FIELDS</p>
+            <div class="formGroup">
+                <input type="text" name="array" placeholder="Input the array" required />
+                <input type="submit" value="submit" class="button button--primary" />
+            </div>
+        </form>
+        <a
+            class="learnMoreLink"
+            href="https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/"
+        >
+            Learn more about this problem
+        </a>
+    </div>
+</div>
+{% endblock content %}

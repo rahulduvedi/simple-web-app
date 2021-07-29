@@ -1,0 +1,35 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="algoWrapper">
+    <div class="algoWrapper__card">
+        <h1>Triplet with the given sum</h1>
+        <h2>About this problem</h2>
+        <p>
+            Given an array and a value, find if there is a triplet in array whose sum is
+            equal to the given value. <br />If there is such a triplet present in array,
+            then print the triplet and return true.<br />Else return false.
+        </p>
+        <form href="#" method="post">
+            <p>PLEASE FILL THE REQUIRED FIELDS</p>
+            <div class="formGroup">
+                <input type="text" name="array" placeholder="Enter the array" required />
+                <input
+                    type="number"
+                    name="target"
+                    placeholder=" Enter the target value"
+                    required
+                />
+                <input type="submit" value="submit" class="button button--primary" />
+            </div>
+        </form>
+
+        <a
+            class="learnMoreLink"
+            href="https://www.geeksforgeeks.org/find-a-triplet-that-sum-to-a-given-value/"
+        >
+            Learn more about this problem
+        </a>
+    </div>
+</div>
+
+{% endblock content %}
